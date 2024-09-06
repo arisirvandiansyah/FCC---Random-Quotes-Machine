@@ -62,6 +62,7 @@ function App() {
           </button>
         </div>
       </div>
+      <p className="tag-name">By <a href="https://github.com/arisirvandiansyah" target='_blank'>Aris Irvandiansyah</a></p>
     </main>
   )
 }
