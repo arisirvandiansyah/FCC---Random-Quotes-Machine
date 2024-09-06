@@ -68,7 +68,7 @@ p {
   opacity: .8;
 }
 
-#tweet-quote {
+.share {
   padding: .75rem;
   border: none;
   border-radius: .5rem;

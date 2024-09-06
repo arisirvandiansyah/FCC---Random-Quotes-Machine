@@ -54,8 +54,8 @@ function App() {
         </div>
         <div className="buttons">
           <div>
-            <a href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${qState.quote}" ${qState.author}`} id="tweet-quote" target="_blank" style={{backgroundColor: color}}><FaTwitter color='white' /></a>
-            <a href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${qState.author}&content=${qState.quote}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`} id="tweet-quote" target="_blank" style={{backgroundColor: color}}><FaTumblr color='white' /></a>
+            <a href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${qState.quote}" ${qState.author}`} id="tweet-quote" className='share' target="_blank" style={{backgroundColor: color}}><FaTwitter color='white' /></a>
+            <a href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${qState.author}&content=${qState.quote}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`} className='share' target="_blank" style={{backgroundColor: color}}><FaTumblr color='white' /></a>
           </div>
           <button id="new-quote" onClick={getQuote} style={{backgroundColor: color}}>
             New Quote
