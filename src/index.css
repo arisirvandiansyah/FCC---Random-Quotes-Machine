@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 1s;
+}
+
+#quote-box {
+  width: 500px;
+  height: auto;
+  border: none;
+  border-radius: .5rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 10px gray;
+}
+
+#text {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: .5rem;
+  transition: all 1s;
+}
+
+#author {
+  text-align: right;
+  margin-bottom: .5rem;
+  transition: all 1s;
+}
+
+#new-quote {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 5px gray;
+  transition: all 1s;
+}
+
+#new-quote:hover {
+  opacity: .8;
+}
+
+#tweet-quote {
+  padding: .75rem;
+  border: none;
+  border-radius: .5rem;
+  margin-right: .25rem;
+  box-shadow: 1px 1px 5px gray;
+  transition: all 1s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animated {
+  animation: anim 1s ease-in-out;
+}
+
+@keyframes anim {
+  0% {opacity: 1;}
+  40%, 50% {opacity: 0;}
+  100% {opacity: 1;}
+}
